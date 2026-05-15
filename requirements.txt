@@ -1,0 +1,14 @@
+torch
+d3rlpy
+stable-baselines3
+numpy
+pandas
+pyarrow
+scipy
+scikit-learn
+matplotlib
+seaborn
+boto3
+pyyaml
+tqdm
+python-dotenv

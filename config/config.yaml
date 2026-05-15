@@ -1,0 +1,17 @@
+data:
+  parquet_path: ../edu-data-pipeline/results/master_panel.parquet
+  district_embeddings: ../edu-gnn/results/embeddings/district_embeddings.pt
+  r2_embeddings_key: embeddings/edu-gnn/district_embeddings.pt
+
+offline:
+  algorithm: [cql, iql]
+  conservative_weight: 5.0
+  expectile: 0.7
+  n_steps: 500000
+  batch_size: 256
+  lr: 0.0003
+
+training:
+  checkpoint_dir: results/checkpoints
+  seed: 42
+  eval_interval: 10000
